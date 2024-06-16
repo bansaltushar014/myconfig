@@ -49,5 +49,5 @@ func Add(a, b int) int {
 	// Print the Todo struct
 	fmt.Printf("Todo: %+v\n", todo)
 	fmt.Println(todo.ID)
-	return a + b + todo.ID
+	return a + 2 + b + todo.ID
 }
