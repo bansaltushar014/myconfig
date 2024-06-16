@@ -6,6 +6,12 @@ import (
     "io/ioutil"
     "net/http"
 )
+type Todo struct {
+    UserID    int    `json:"userId"`
+    ID        int    `json:"id"`
+    Title     string `json:"title"`
+    Completed bool   `json:"completed"`
+}
 
 func Add(a, b int) int {
    url := "https://jsonplaceholder.typicode.com/todos/1"
